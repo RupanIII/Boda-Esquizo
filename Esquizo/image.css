@@ -1,0 +1,27 @@
+.imagen-boda {
+    max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 
+        0 0 30px rgba(255, 80, 0, 0.9),
+        0 0 60px rgba(255, 150, 0, 0.7),
+        0 0 90px rgba(255, 50, 0, 0.5);
+    filter: brightness(1.15) contrast(1.2);
+    transition: all 0.4s ease;
+}
+
+.imagen-boda:hover {
+    box-shadow: 
+        0 0 40px rgba(255, 100, 0, 1),
+        0 0 80px rgba(255, 180, 0, 0.8),
+        0 0 120px rgba(255, 60, 0, 0.7);
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .imagen-boda {
+        max-width: 90%;
+    }
+}

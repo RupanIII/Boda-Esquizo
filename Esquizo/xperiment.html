@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Invitación mística a la boda de John Constantine y Adriana S. López: magia, neón y caos con estilo oscuro.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="La Boda de John Constantine y Adriana López">
+    <meta property="og:description" content="Invitación mística a la boda más oscura del multiverso.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="noice2.0.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://example.com/xperiment.html">
+    <title>La Boda de John Constantine y Adriana López 🔮🔥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="blazing.css">
+    <link rel="stylesheet" href="neon.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <div id="entry-overlay">
+        <div class="entry-content">
+            <h1 class="entry-title">🔮 Bienvenido al Hellblazer Club 🔥</h1>
+            <p class="entry-subtitle">Estás a punto de entrar a la boda más oscura del multiverso</p>
+            <div class="entry-fire"></div>
+            <button id="enter-btn" class="entry-btn">
+                <span>Entrar al Ritual</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+            <p class="entry-music-hint">🔊 Se reproducirá música de fondo</p>
+        </div>
+    </div>
+
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#detalle">Detalles</a></li>
+            <li><a href="#padrinos">Padrinos</a></li>
+            <li><a href="#dresscode">Dresscode</a></li>
+            <li><a href="#momentos">Momentos</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">▲</button>
+
+    <section class="dark fire" id="inicio" role="banner">
+        <div class="fire-animation" aria-hidden="true"></div>
+        <div class="titulo-contenedor text-center">
+            <h1 class="Blazing glitch" data-text="🔮 JOHN CONSTANTINE 🔥">
+                🔮 JOHN CONSTANTINE & Adriana López 🔥
+            </h1>
+            <p class="sr-only">Invitación a la boda mística de John Constantine y Adriana S. López</p>
+        </div>
+    </section>
+
+    <header class="header-epico" id="detalle" role="region" aria-label="Detalles del evento">
+        <div class="header-content">
+            <img src="noice2.0.png" alt="Imagen principal de la boda" class="imagen-boda" loading="lazy">
+            <h1 class="titulo-principal pulse-glow">Nuestra Boda Mística</h1>
+            <p class="subtitulo fade-in">Un colapso del multiverso</p>
+            <button id="music-toggle" class="music-btn">🔊 Música</button>
+            <div id="countdown" class="countdown" aria-live="polite">Cargando cuenta regresiva...</div>
+            <div class="animated-line"></div>
+        </div>
+    </header>
+
+    <div id="adorno" class="neon-section" aria-label="Mensaje principal">
+        <div class="neon-glow" aria-hidden="true"></div>
+        <h1 class="neon-text" style="text-align: center;">Magia y amor unidos</h1>
+    </div>
+
+    <section class="epico fade-in-section">
+        <div class="epico-background"></div>
+        <h2 class="epic-title"><strong>🌑 La boda más oscura del universo 🌑</strong></h2>
+        <p class="epic-subtitle">
+            Donde el amor desafía las fuerzas del infierno y la magia prevalece sobre todo
+        </p>
+    </section>
+
+    <section class="detalles scroll-animation">
+        <div class="detalle-item">
+            <h3>📅 Fecha Mágica</h3>
+            <p>Sábado, 13 de Octubre</p>
+            <p class="small-text">(La noche sin luna)</p>
+        </div>
+        <div class="detalle-item">
+            <h3>📍 Ubicación Paranormal</h3>
+            <p>The Hellblazer Club</p>
+            <p class="small-text">(Cruce de dimensiones)</p>
+        </div>
+        <div class="detalle-item">
+            <h3>⏰ Hora del Hechizo</h3>
+            <p>13:13</p>
+            <p class="small-text">(Cuando los velos se rasgan)</p>
+        </div>
+    </section>
+
+    <section class="padrinos-section scroll-animation" id="padrinos" role="region" aria-label="Padrinos del evento">
+        <div class="padrinos-header">
+            <h3 class="padrinos-title">🔮 Los Padrinos del Caos</h3>
+            <p class="padrinos-subtitle">Acompañados por:</p>
+        </div>
+        
+        <div class="padrinos-container">
+            <div class="padrino-card">
+                <div class="padrino-icon">🦇</div>
+                <h4>Batman El caballero de la noche</h4>
+                <p>El que los presentó XD (la novia lo obligó a ir)</p>
+            </div>
+            <div class="padrino-card">
+                <div class="padrino-icon">🚕</div>
+                <h4>Chas Chandler</h4>
+                <p>El mejor amigo de John</p>
+            </div>
+            <div class="padrino-card">
+                <div class="padrino-icon">☘️</div>
+                <h4>La cosa del pantano</h4>
+                <p>Guardián del bosque (se coló jaja)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dresscode-section scroll-animation" id="dresscode" role="region" aria-label="Código de vestimenta">
+        <h3>🎩 Código de Vestimenta</h3>
+        <div class="dresscode-content">
+            <p><strong>Semi-formal Oscuro Místico</strong></p>
+            <p>Capas, prendas oscuras y accesorios mágicos, todos pueden llevar tenis pero que sean negros</p>
+            <p style="color: #ff00ff; font-size: 1.1rem; margin-top: 15px;">⚠️ Se solicita no traer armas convencionales (solo hechizos y magia)</p>
+        </div>
+    </section>
+
+    <section class="moments-section scroll-animation" id="momentos" role="region" aria-label="Momentos especiales">
+        <h3 class="moments-title">✨ Momentos Especiales ✨</h3>
+        <div class="carousel-controls">
+            <button id="carousel-prev" class="carousel-btn" aria-label="Anterior momento">⬅ Anterior</button>
+            <button id="carousel-next" class="carousel-btn" aria-label="Siguiente momento">Siguiente ➡</button>
+        </div>       
+        <div class="moments-grid">
+            <div class="moment-card active">
+                <img src="ohmygatoooooo.png" alt="El Toque del Destino" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>🔥 El Toque del Destino</h4>
+                    <p>Cuando los caminos se cruzan en el caos, y el amor emerge victorioso.</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="omg que bonitoooo.jpg" alt="La Propuesta" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>💕 La Propuesta</h4>
+                    <p>Un momento mágico bajo la lluvia de estrellas</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="bestPIC4EVER.2.png" alt="La Ceremonia" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>🌙 La Ceremonia</h4>
+                    <p>Un ritual místico</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="baile.png" alt="La Celebración" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>🎆 La Celebración</h4>
+                    <p>Una noche de magia y diversión</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="awwletritas.png" alt="La Eternidad" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>💎 La Eternidad</h4>
+                    <p>Un amor que trasciende el tiempo y el espacio</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="ayyyyyy que boniiiis.png" alt="Qué Bonito es el Amor" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>💖 Abrazos mágicos</h4>
+                    <p>Momentos mágicos llenos de magia</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="uyuyuy.png" alt="Divertidos Juntos" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>😄 Divertidos Juntos</h4>
+                    <p>Riendo sin parar en nuestra aventura</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="bonitoooo.png" alt="Belleza Natural" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>🌟 Belleza Natural</h4>
+                    <p>La belleza que brilla entre nosotros</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="masooo.png" alt="Siempre Juntos" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>💕 Siempre Juntos</h4>
+                    <p>Unidos por siempre en este viaje</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="noiceeeeee1.png" alt="Momentos Perfectos" loading="lazy">
+                <div class="moment-overlay">
+                    <h4>✨ Momentos Perfectos</h4>
+                    <p>Cada segundo a tu lado es perfecto</p>
+                </div>
+            </div>
+            <div class="moment-card">
+                <img src="ommmggggggggggggggg si soy.png" alt="Fuerte y Bella" loading="lazy">
+                <div class="moment-overlay">
+                    <h4> Encuentros mágicos</h4>
+                    <p>Noches especiales llenas de magia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp-section scroll-animation" id="rsvp">
+        <h3>📜 Confirmar Asistencia</h3>
+        <div class="rsvp-form-wrapper">
+            <iframe 
+                id="rsvp-iframe"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeOCVGLvLFWdTA1cnQVjSK0d55o5zcC4enZ3_a9Bi0NOp0ajw/viewform?embedded=true" 
+                loading="lazy"
+                title="Formulario de confirmación"
+                class="rsvp-iframe"
+            >
+                Cargando...
+            </iframe>
+            <button class="rsvp-submit-btn" onclick="showSuccessOverlay()">
+                🔥 Ya envié mi confirmación
+            </button>
+        </div>
+    </section>
+    
+    <div class="rsvp-success-overlay" id="rsvp-success-overlay" hidden>
+        <div class="success-container">
+            <div class="success-glow"></div>
+            <div class="success-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
+            <div class="success-icon">🔥</div>
+            <h2 class="success-title">¡Tu alma está sellada en el pacto!</h2>
+            <p class="success-subtitle">El destino ha sido sellado en el Hellfire Club</p>
+            <div class="success-details">
+                <span class="success-date">📅 13 de Octubre, 2026</span>
+                <span class="success-time">⏰ 13:13</span>
+                <span class="success-location">📍 The Hellfire Club</span>
+            </div>
+            <p class="success-message">
+                "Ni el infierno podrá separarnos ahora"
+                <span class="success-author">— John Constantine</span>
+            </p>
+            <button class="success-btn" onclick="closeRSVPSuccess()">
+                Volver al ritual 🔥
+            </button>
+        </div>
+        <canvas class="magic-canvas" id="magic-canvas"></canvas>
+    </div>
+
+    <footer class="footer-epico">
+        <div class="footer-glow"></div>
+        <p class="footer-quote">✨ Que el fuego del infierno no sea nada comparado con nuestro amor ✨</p>
+        <p class="footer-citation">
+            "Love will find a way through walls and stone" <br>
+            <strong>- John Constantine</strong>
+        </p>
+        <div class="footer-separator"></div>
+        <p class="footer-contact">Para más información: constantine@hellblazer.dark | 666-WEDDING</p>
+    </footer>
+
+    <audio id="bg-music" src="The Windmills Of Your Mind - Sting.mp3" loop preload="auto"></audio>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        initEntryOverlay();
+        createParticles();
+        initObserver();
+        initCarousel();
+        initCountdown();
+        initBackToTop();
+        initKeyboardShortcuts();
+        initAudioManager();
+        initRSVP();
+    });
+
+    function initEntryOverlay() {
+        const overlay = document.getElementById('entry-overlay');
+        const enterBtn = document.getElementById('enter-btn');
+        const audio = document.getElementById('bg-music');
+        const musicToggle = document.getElementById('music-toggle');
+        
+        if (!overlay || !enterBtn) return;
+
+        enterBtn.addEventListener('click', () => {
+            overlay.classList.add('hidden');
+            
+            if (audio && audio.paused) {
+                audio.volume = 0.5;
+                audio.play().then(() => {
+                    if (musicToggle) {
+                        musicToggle.textContent = '🔇 Silenciar';
+                        musicToggle.classList.add('playing');
+                    }
+                }).catch(() => {});
+            }
+            
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 800);
+        });
+    }
+
+    function createParticles() {
+        const particlesContainer = document.getElementById('particles');
+        if (!particlesContainer) return;
+        particlesContainer.innerHTML = '';
+        
+        const colors = ['red', 'orange', 'yellow', 'white'];
+        const particleCount = Math.min(150, Math.max(80, Math.floor(window.innerWidth / 8)));
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            const colorClass = colors[Math.floor(Math.random() * colors.length)];
+            particle.className = `particle ${colorClass}`;
+            
+            const size = Math.random() * 6 + 4;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.bottom = '-20px';
+            particle.style.animationDuration = (Math.random() * 4 + 3) + 's';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            particle.style.setProperty('--drift', (Math.random() * 100 - 50) + 'px');
+            particle.style.boxShadow = `0 0 ${size * 2}px ${colorClass === 'white' ? '#ffaa00' : colorClass === 'yellow' ? '#ff8800' : colorClass === 'orange' ? '#ff4400' : '#ff2200'}`;
+            
+            particlesContainer.appendChild(particle);
+        }
+    }
+
+    function initObserver() {
+        const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -120px 0px' };
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.scroll-animation, .fade-in-section').forEach(el => observer.observe(el));
+    }
+
+    let currentIndex = 0;
+    let intervalId = null;
+
+    function initCarousel() {
+        const cards = document.querySelectorAll('.moment-card');
+        if (!cards.length) return;
+
+        function showCard(index) {
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === index);
+                card.setAttribute('aria-hidden', i === index ? 'false' : 'true');
+            });
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % cards.length;
+            showCard(currentIndex);
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            showCard(currentIndex);
+        }
+
+        document.getElementById('carousel-next')?.addEventListener('click', () => { nextCard(); resetInterval(); });
+        document.getElementById('carousel-prev')?.addEventListener('click', () => { prevCard(); resetInterval(); });
+
+        const grid = document.querySelector('.moments-grid');
+        if (grid) {
+            grid.addEventListener('mouseenter', () => clearInterval(intervalId));
+            grid.addEventListener('mouseleave', () => resetInterval());
+            
+            let touchStartX = 0;
+            grid.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; });
+            grid.addEventListener('touchend', e => {
+                const touchEndX = e.changedTouches[0].screenX;
+                if (touchEndX - touchStartX > 40) prevCard();
+                if (touchStartX - touchEndX > 40) nextCard();
+                resetInterval();
+            });
+        }
+
+        function resetInterval() {
+            clearInterval(intervalId);
+            intervalId = setInterval(nextCard, 4000);
+        }
+
+        showCard(currentIndex);
+        resetInterval();
+
+        window.nextCard = nextCard;
+        window.prevCard = prevCard;
+    }
+
+    function initCountdown() {
+        const countdownElem = document.getElementById('countdown');
+        if (!countdownElem) return;
+
+        function getNextWeddingDate() {
+            const now = new Date();
+            let year = now.getFullYear();
+            const weddingDate = new Date(`${year}-10-13T13:13:00`);
+            
+            if (now > weddingDate) {
+                year++;
+                return new Date(`${year}-10-13T13:13:00`);
+            }
+            return weddingDate;
+        }
+
+        function pad(num) { return String(num).padStart(2, '0'); }
+
+        function updateCountdown() {
+            const now = new Date();
+            const targetDate = getNextWeddingDate();
+            const diff = targetDate - now;
+            
+            if (diff <= 0) {
+                countdownElem.innerHTML = `<span class="countdown-active">🔥 ¡La hora del hechizo ha llegado! 🔥</span>`;
+                return;
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+            
+            countdownElem.innerHTML = `
+                <div class="countdown-wrapper">
+                    <div class="countdown-label">Cuenta regresiva para ${targetDate.getFullYear()}</div>
+                    <div class="countdown-numbers">
+                        <span class="countdown-unit"><strong>${days}</strong><small>días</small></span>
+                        <span class="countdown-sep">:</span>
+                        <span class="countdown-unit"><strong>${pad(hours)}</strong><small>hrs</small></span>
+                        <span class="countdown-sep">:</span>
+                        <span class="countdown-unit"><strong>${pad(minutes)}</strong><small>min</small></span>
+                        <span class="countdown-sep">:</span>
+                        <span class="countdown-unit"><strong>${pad(seconds)}</strong><small>seg</small></span>
+                    </div>
+                </div>
+            `;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    }
+
+    function initBackToTop() {
+        const btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 300);
+        });
+        
+        btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    function initKeyboardShortcuts() {
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight') window.nextCard?.();
+            if (e.key === 'ArrowLeft') window.prevCard?.();
+        });
+    }
+
+    const AudioManager = (() => {
+        const audio = document.getElementById('bg-music');
+        const toggleBtn = document.getElementById('music-toggle');
+        
+        if (!audio || !toggleBtn) return null;
+
+        let isPlaying = false;
+        let fadeInterval = null;
+        const FADE_DURATION = 800;
+        const FADE_STEPS = 20;
+        
+        const state = {
+            get playing() { return isPlaying; },
+            volume: parseFloat(localStorage.getItem('audioVolume') || '0.5'),
+            muted: localStorage.getItem('audioMuted') === 'true'
+        };
+
+        function fadeOut(callback) {
+            if (fadeInterval) return;
+            const startVol = audio.volume;
+            const step = startVol / FADE_STEPS;
+            let currentStep = 0;
+            
+            fadeInterval = setInterval(() => {
+                currentStep++;
+                audio.volume = Math.max(0, startVol - (step * currentStep));
+                
+                if (currentStep >= FADE_STEPS) {
+                    clearInterval(fadeInterval);
+                    fadeInterval = null;
+                    audio.pause();
+                    audio.volume = state.volume;
+                    callback?.();
+                }
+            }, FADE_DURATION / FADE_STEPS);
+        }
+
+        function fadeIn() {
+            audio.volume = 0;
+            audio.play().catch(() => {
+                state.muted = true;
+                updateUI();
+            });
+            const targetVol = state.volume;
+            const step = targetVol / FADE_STEPS;
+            let currentStep = 0;
+            
+            fadeInterval = setInterval(() => {
+                currentStep++;
+                audio.volume = Math.min(targetVol, step * currentStep);
+                
+                if (currentStep >= FADE_STEPS) {
+                    clearInterval(fadeInterval);
+                    fadeInterval = null;
+                }
+            }, FADE_DURATION / FADE_STEPS);
+        }
+
+        function toggle() {
+            if (isPlaying) {
+                fadeOut(() => {
+                    isPlaying = false;
+                    updateUI();
+                });
+            } else {
+                fadeIn();
+                isPlaying = true;
+                updateUI();
+            }
+        }
+
+        function updateUI() {
+            if (state.muted || !isPlaying) {
+                toggleBtn.textContent = '🔊 Música';
+                toggleBtn.classList.remove('playing');
+            } else {
+                toggleBtn.textContent = '🔇 Silenciar';
+                toggleBtn.classList.add('playing');
+            }
+        }
+
+        function init() {
+            audio.volume = state.volume;
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting && isPlaying) {
+                        fadeOut(() => {
+                            isPlaying = false;
+                            updateUI();
+                        });
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            observer.observe(document.body);
+
+            toggleBtn.addEventListener('click', toggle);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'm' && !e.target.matches('input, textarea')) {
+                    toggle();
+                }
+            });
+
+            audio.addEventListener('ended', () => {
+                isPlaying = false;
+                updateUI();
+            });
+        }
+
+        init();
+
+        return { toggle, state };
+    })();
+
+    function initAudioManager() {}
+
+    function initRSVP() {
+        const iframe = document.getElementById('rsvp-iframe');
+        
+        if (iframe) {
+            iframe.addEventListener('load', function() {
+                try {
+                    const doc = iframe.contentDocument || iframe.contentWindow.document;
+                    const checkSubmission = setInterval(() => {
+                        try {
+                            const text = doc.body.innerText || doc.body.textContent || '';
+                            if (text.includes('Gracias') || text.includes('enviada') || text.includes('response')) {
+                                clearInterval(checkSubmission);
+                                showSuccessOverlay();
+                            }
+                        } catch(e) {}
+                    }, 1000);
+                } catch(e) {}
+            });
+        }
+    }
+
+    function showSuccessOverlay() {
+        const overlay = document.getElementById('rsvp-success-overlay');
+        if (!overlay) return;
+        
+        overlay.hidden = false;
+        requestAnimationFrame(() => overlay.classList.add('visible'));
+        launchMagicParticles();
+    }
+
+    window.closeRSVPSuccess = function() {
+        const overlay = document.getElementById('rsvp-success-overlay');
+        if (overlay) overlay.classList.remove('visible');
+        document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    function launchMagicParticles() {
+        const canvas = document.getElementById('magic-canvas');
+        if (!canvas) return;
+        
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const colors = ['#FFD700', '#FFA500', '#FF69B4', '#E8E8E8', '#00FFFF', '#9370DB', '#FFFFFF', '#F0E68C'];
+        const particles = [];
+        
+        for (let i = 0; i < 150; i++) {
+            particles.push(createMagicParticle(colors, canvas));
+        }
+        
+        let lastTime = performance.now();
+        
+        function animate(currentTime) {
+            const deltaTime = currentTime - lastTime;
+            lastTime = currentTime;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(p => {
+                p.phaseX += p.freqX * deltaTime;
+                p.phaseY += p.freqY * deltaTime;
+                p.twinkle += p.twinkleSpeed * deltaTime;
+                p.rotation += p.rotationSpeed * deltaTime;
+                p.life += deltaTime;
+                
+                p.x = p.baseX + Math.sin(p.phaseX) * p.amplitudeX;
+                p.y = p.baseY + Math.cos(p.phaseY) * p.amplitudeY;
+                p.opacity = 0.4 + Math.sin(p.twinkle) * 0.6;
+                
+                if (p.life > p.maxLife) {
+                    resetParticle(p, colors, canvas);
+                }
+                
+                drawMagicParticle(ctx, p);
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        function createMagicParticle(colorArray, canvas) {
+            const types = ['star', 'circle', 'spark'];
+            const type = types[Math.floor(Math.random() * types.length)];
+            const color = colorArray[Math.floor(Math.random() * colorArray.length)];
+            
+            return {
+                x: 0, y: 0,
+                baseX: Math.random() * canvas.width,
+                baseY: Math.random() * canvas.height,
+                amplitudeX: 20 + Math.random() * 60,
+                amplitudeY: 20 + Math.random() * 40,
+                freqX: 0.001 + Math.random() * 0.002,
+                freqY: 0.001 + Math.random() * 0.002,
+                phaseX: Math.random() * Math.PI * 2,
+                phaseY: Math.random() * Math.PI * 2,
+                size: 4 + Math.random() * 12,
+                color: color,
+                type: type,
+                spikes: 4 + Math.floor(Math.random() * 3),
+                twinkle: Math.random() * Math.PI * 2,
+                twinkleSpeed: 0.002 + Math.random() * 0.004,
+                rotation: Math.random() * Math.PI * 2,
+                rotationSpeed: (Math.random() - 0.5) * 0.002,
+                life: 0,
+                maxLife: 5000 + Math.random() * 10000,
+                opacity: 1
+            };
+        }
+        
+        function resetParticle(p, colorArray, canvas) {
+            p.baseX = Math.random() * canvas.width;
+            p.baseY = Math.random() * canvas.height;
+            p.color = colorArray[Math.floor(Math.random() * colorArray.length)];
+            p.life = 0;
+            p.maxLife = 5000 + Math.random() * 10000;
+        }
+        
+        function drawMagicParticle(ctx, p) {
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.rotation);
+            ctx.globalAlpha = p.opacity;
+            ctx.shadowBlur = p.size * 2;
+            ctx.shadowColor = p.color;
+            
+            if (p.type === 'star') {
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                for (let i = 0; i < p.spikes * 2; i++) {
+                    const radius = i % 2 === 0 ? p.size : p.size / 2;
+                    const angle = (i * Math.PI) / p.spikes;
+                    const x = Math.cos(angle) * radius;
+                    const y = Math.sin(angle) * radius;
+                    if (i === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.fill();
+            } else if (p.type === 'circle') {
+                const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, p.size);
+                grad.addColorStop(0, p.color);
+                grad.addColorStop(0.5, p.color + '80');
+                grad.addColorStop(1, 'transparent');
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.arc(0, 0, p.size, 0, Math.PI * 2);
+                ctx.fill();
+            } else {
+                ctx.strokeStyle = p.color;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(-p.size, 0); ctx.lineTo(p.size, 0);
+                ctx.moveTo(0, -p.size); ctx.lineTo(0, p.size);
+                ctx.stroke();
+            }
+            
+            ctx.restore();
+        }
+        
+        requestAnimationFrame(animate);
+    }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
